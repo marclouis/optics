@@ -2,6 +2,11 @@ html {
   font-family: Helvetica;
   font-size: 18px;
   line-height: 1.4;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 .hero {
@@ -9,6 +14,8 @@ html {
   height: 30rem;
   background-size: cover;
   background-position: center;
+  width: 100%;
+  margin: 0 auto;
 }
 .flex {
   display: flex;
@@ -33,7 +40,7 @@ html {
   width: 100%;
   padding: 1rem 2rem 1rem 2rem;
   justify-content: space-between;
-  margin-top: 1rem;
+  margin-top: rem;
   position: relative;
   top: 1rem;
 }
@@ -66,19 +73,17 @@ html {
 }
 
 .banner {
-  background-color: white;
-  color: black;
-  font-family: Helvetica;
+  height: 26rem;
   display: flex;
   justify-content: flex-end;
   margin-right: 2rem;
-  position: relative;
-  top: 11rem;
+
 }
 
 .main {
   display: inline-block;
   line-height: 2.4rem;
+  margin-top: 10rem;
 }
 
 .banner span {
@@ -86,5 +91,271 @@ html {
   font-size: 2rem;
   font-weight: bold;
   padding: 1.5rem 5rem 1.5rem 5rem;
+  background-color: white;
+  color: black;
+  font-family: Helvetica;
+}
+
+
+
+/*Services Section*/
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+}
+
+.serv {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center;
+  height: 8rem;
+  width: auto;
+  text-align: center;
+  padding: 0 0 3rem 0;
+  padding: 0px;
+}
+
+.serv .one {
+}
+
+.serv img {
+
+}
+.paper {
+  margin-right: 3rem;
+}
+
+.ruler {
+  margin: 0 3rem 0 3rem;
+}
+
+.truck {
+  margin-left: 3rem;
+
+}
+
+.paper img{
+  width: 3.5rem;
+  height: auto;
+  padding-bottom: 1.75rem;
+}
+
+.ruler img {
+  width: 5rem;
+  height: auto;
+
+}
+
+.truck img {
+  width: 5rem;
+  height: auto;
+
+}
+
+
+
+
+/* Information Section*/
+
+.information {
+  display: flex;
+  justify-content: center;
+  margin-bottom:5rem;
+}
+
+.info {
+  width: 35%;
+}
+
+.philosophy{
+  margin-right: 2.5%;
+}
+
+.appointments{
+margin-left: 2.5%;
+}
+
+.back {
+  width: 10rem;
+  background-color: cadetblue;
+  margin-bottom: 1rem;
+  padding-top:0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left:1.25rem;
+}
+.info span {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+
+/*Footer*/
+
+footer {
+  display: flex;
+  align-items: center;
+  padding-top:4rem;
+  padding-bottom:4rem;
+  padding-left: 4rem;
+  background-color: azure;
+}
+footer img {
+  height: 1.5rem;
+  width: auto;
+  margin-right: 1rem;
+}
+
+
+
+
+/*Media Queries*/
+
+
+
+@media only screen and (max-width: 1037px){
+    .hero {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      height: 22rem;
+    }
+
+    .nav {
+      position: static;
+
+    }
+
+    .nav ul {
+      padding-right: 5%;
+    }
+
+    .container {
+      width: 100%;
+
+    }
+
+    .banner {
+
+    }
+
+    .main {
+      margin-top: 5rem;
+      margin-right: 2rem;
+    }
+    .banner span {
+      padding: 0.75rem 4rem 0.75rem 4rem;
+      font-size: 1.33rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+  .hero {
+    height: 17rem;
+    background-size: cover;
+    background-position: left;
+  }
+
+  .banner {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .main {
+    margin-top: 9rem;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: inline;
+    margin-right: 0;
+
+  }
+
+  .main span {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .nav .mainnav {
+    display: none;
+  }
+
+  #menu {
+    display:flex;
+    justify-content: center;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+
+
+
+
+  .information {
+    display: block;
+    text-align: left;
+    margin-top: 3.77rem;
+  }
+
+  .info {
+    width: 100%;
+  }
+  .back {
+    width: 100%;
+    text-align: center;
+  }
+
+  .appointments {
+    margin-left: 0;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .philosophy {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .services {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.2rem
+  }
+
+  .serv {
+    padding: 0;
+    margin: 0;
+  }
+
+  .truck img {
+    margin-top: 1.54rem;
+  }
+
+  .ruler img {
+    margin-top: 1.54rem;
+  }
+
+  footer span {
+    display: none;
+
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+
+  }
+
+
 
 }
